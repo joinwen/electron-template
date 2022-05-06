@@ -6,6 +6,7 @@
       class="shadow-basic rounded-4"
       controls
       autoplay
+      muted
     ></video>
     <img v-else :src="item.url" />
     <div class="left-hamburger ease-in-out-1/60 hover:gray-200">

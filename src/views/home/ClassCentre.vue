@@ -28,9 +28,8 @@ import ClassCentreShow from "./components/ClassCentreShow";
 import ClassCentreRoomList from "./components/ClassCentreRoomList";
 import ClassCentreControlList from "./components/ClassCentreControlList";
 import { mapGetters } from "vuex";
-const fs = require("fs");
-const wrtc = require("wrtc");
 
+const fs = require("fs");
 export default {
   name: "ClassCentre",
   components: {
@@ -56,7 +55,7 @@ export default {
     //   video: true,
     //   audio: true
     // });
-    console.log(fs, wrtc);
+    console.log(fs);
     this.stream = stream;
     this.item = {
       id: 3,
@@ -81,7 +80,7 @@ export default {
   .class-centre-control {
     width: 256px;
     flex: 0 0 auto;
-    overflow: hidden;
+    overflow: auto;
     background-color: #37486b;
   }
   .class-centre-control-hidden {
@@ -95,7 +94,7 @@ export default {
   .class-centre-room {
     width: 200px;
     flex: 0 0 auto;
-    overflow: hidden;
+    overflow: auto;
     background-color: #f5f6f7;
   }
   .class-centre-room-hidden {
